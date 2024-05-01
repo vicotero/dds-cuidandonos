@@ -17,7 +17,7 @@ namespace Entities
         public void GenerarNuevoViaje(Persona solicitante, List<Persona> cuidadores, Trayecto trayecto) 
         {
             if (CheckIfSolicitanteEsCuidador(solicitante))
-                throw new ParaBoludoQueHacesException();
+                throw new ParaQueHacesException();
 
             var confirmados = new List<Persona>();
             foreach (var item in cuidadores)
